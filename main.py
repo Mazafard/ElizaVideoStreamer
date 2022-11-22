@@ -1,6 +1,8 @@
 import asyncio
 from pytgcalls import idle
-from driver.eliza import call_py, bot
+# from Driver.eliza import call_py, bot
+from Driver.veez import bot, call_py
+
 
 async def start_bot():
     print("[INFO]: STARTING BOT CLIENT")
