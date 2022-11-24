@@ -1,9 +1,9 @@
 import os
 import asyncio
-from driver.eliza import bot, call_py
+from Driver.veez import bot, call_py
 from pytgcalls.types import Update
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
-from driver.queues import QUEUE, clear_queue, get_queue, pop_an_item
+from Driver.queues import QUEUE, clear_queue, get_queue, pop_an_item
 from pytgcalls.types.input_stream.quality import (
     HighQualityAudio,
     HighQualityVideo,
