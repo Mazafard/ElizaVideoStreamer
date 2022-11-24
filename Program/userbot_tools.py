@@ -36,7 +36,7 @@ async def join_chat(c: Client, m: Message):
 
 
 @Client.on_message(command(["userbotleave",
-                            f"leave@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+                            f"leave@{BOT_USERNAME}"]) & filters.group
 )
 @authorized_users_only
 async def leave_chat(_, m: Message):
