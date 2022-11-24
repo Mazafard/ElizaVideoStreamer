@@ -1,6 +1,6 @@
 # Copyright (C) 2021 By Eliza-Annie-Video-Streamer
 
-from driver.queues import QUEUE
+from Driver.queues import QUEUE
 from pyrogram import Client, filters
 from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 from config import (
@@ -43,10 +43,11 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/PereraSehath/Eliza-Annie-Video-Streamer"
-                    )
-                    InlineKeyboardButtton(
-                        "🤖 Team Eliza", url="https://t.me/TeamEliza"
+                        "🌐 Source Code", url="https://github.com/mazafard/Eliza-Annie-Video-Streamer"
+                    ),
+                    InlineKeyboardButton(
+                        "🤖 Team Eliza", url="https://t.me/mazafard"
+                    ),
                 ],
             ]
         ),

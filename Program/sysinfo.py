@@ -7,9 +7,9 @@ import socket
 import psutil
 import platform
 from config import BOT_USERNAME
-from driver.filters import command
+from Driver.filters import command
 from pyrogram import Client, filters
-from driver.decorators import sudo_users_only, humanbytes
+from Driver.decorators import sudo_users_only, humanbytes
 
 
 # FETCH SYSINFO

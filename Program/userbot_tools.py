@@ -1,11 +1,11 @@
 import asyncio
-from driver.eliza import user
+from Driver.eliza import user
 from pyrogram.types import Message
 from pyrogram import Client, filters
 from config import BOT_USERNAME, SUDO_USERS
-from driver.filters import command, other_filters
-from pyrogram.errors import UserAlreadyParticipant
-from driver.decorators import authorized_users_only, sudo_users_only
+from Driver.filters import command, other_filters
+from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
+from Driver.decorators import authorized_users_only, sudo_users_only
 
 
 @Client.on_message(

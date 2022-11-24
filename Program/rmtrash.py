@@ -3,11 +3,12 @@
 import os
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from driver.filters import command, other_filters
-from driver.decorators import sudo_users_only, errors
+from Driver.filters import command, other_filters
+from Driver.decorators import sudo_users_only, errors
 
 downloads = os.path.realpath("program/downloads")
 raw = os.path.realpath(".")
+
 
 @Client.on_message(command(["rmd", "clear"]) & ~filters.edited)
 @errors
@@ -21,7 +22,7 @@ async def clear_downloads(_, message: Message):
     else:
         await message.reply_text("❌ **no files downloaded**")
 
-        
+
 @Client.on_message(command(["rmw", "clean"]) & ~filters.edited)
 @errors
 @sudo_users_only
