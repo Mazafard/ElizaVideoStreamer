@@ -8,7 +8,7 @@ import asyncio
 from config import ASSISTANT_NAME, BOT_USERNAME, IMG_1, IMG_2
 from Driver.filters import command, other_filters
 from Driver.queues import QUEUE, add_to_queue
-from Driver.eliza import call_py, user
+from Driver.veez import call_py, user
 from Driver.utils import bash
 from pyrogram import Client
 from pyrogram.errors import UserAlreadyParticipant, UserNotParticipant
